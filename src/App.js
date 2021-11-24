@@ -42,30 +42,32 @@ function App() {
         <>
             <form name="fruit-form">
                 <h1>Fruitmand bezorgservice</h1>
-                <Fruit
-                    fruitName="Aardbeien"
-                    fruitEmoji="🍓"
-                    counter={strawberryCounter}
-                    setCounter={setStrawberryCounter}
-                />
-                <Fruit
-                    fruitName="Bananen"
-                    fruitEmoji="🍌"
-                    counter={bananaCounter}
-                    setCounter={setBananaCounter}
-                />
-                <Fruit
-                    fruitName="Appels"
-                    fruitEmoji="🍎"
-                    counter={appleCounter}
-                    setCounter={setAppleCounter}
-                />
-                <Fruit
-                    fruitName="Kiwi's"
-                    fruitEmoji="🥝"
-                    counter={kiwiCounter}
-                    setCounter={setKiwiCounter}
-                />
+                <section className="fruit-section">
+                    <Fruit
+                        fruitName="Aardbeien"
+                        fruitEmoji="🍓"
+                        counter={strawberryCounter}
+                        setCounter={setStrawberryCounter}
+                    />
+                    <Fruit
+                        fruitName="Bananen"
+                        fruitEmoji="🍌"
+                        counter={bananaCounter}
+                        setCounter={setBananaCounter}
+                    />
+                    <Fruit
+                        fruitName="Appels"
+                        fruitEmoji="🍎"
+                        counter={appleCounter}
+                        setCounter={setAppleCounter}
+                    />
+                    <Fruit
+                        fruitName="Kiwi's"
+                        fruitEmoji="🥝"
+                        counter={kiwiCounter}
+                        setCounter={setKiwiCounter}
+                    />
+                </section>
 
                 <button
                     type="button"
@@ -74,8 +76,7 @@ function App() {
                     Reset
                 </button>
 
-                <br/>
-                <br/>
+
 
                 <InputField type="text" name="firstname" displayname="Voornaam:" id="firstname"/>
                 <InputField type="text" name="lastname" displayname="Achternaam:" id="lastname"/>
@@ -102,11 +103,11 @@ function App() {
                 </label>
 
                 <label htmlFor="approval">
+                    Ik ga akkoord met de voorwaarden
                     <input
                         type="checkbox"
                         name="approval"
                     />
-                    Ik ga akkoord met de voorwaarden
                 </label>
                     <button type="submit"
                             form="form-data"

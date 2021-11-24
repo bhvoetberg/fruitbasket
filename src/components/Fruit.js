@@ -15,7 +15,7 @@ function Fruit ({fruitName, fruitEmoji, counter, setCounter}) {
                     onClick={() => setCounter(counter - 1)}>
                     -
                 </button>
-                <h3>Aantal: {counter}</h3>
+                <p>Aantal: {counter}</p>
                 <button
                     type="button"
                     onClick={() => setCounter(counter + 1)}
